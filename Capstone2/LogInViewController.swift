@@ -7,24 +7,51 @@
 
 import UIKit
 
+import Firebase
+
 class LogInViewController: UIViewController {
 
-    @IBOutlet weak var firstNameTextField: UITextField!
-    @IBOutlet weak var lastNameTextField: UITextField!
+    @IBOutlet weak var enterEmail: UITextField!
+    @IBOutlet weak var enterPassword: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
-    
+    let loginToList = "LoginToList"
+    var handle: AuthStateDidChangeListenerHandle?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpElements()
-        // Do any additional setup after loading the view.
+       
     }
     func setUpElements() {
             errorLabel.alpha = 0
-            Utilities.styleTextField(firstNameTextField)
-            Utilities.styleTextField(lastNameTextField)
+            Utilities.styleTextField(enterEmail)
+            Utilities.styleTextField(enterPassword)
             Utilities.styleFilledButton(loginButton)
         }
+    override func viewWillAppear(_ animated: Bool) {
+      super.viewWillAppear(animated)
+      navigationController?.setNavigationBarHidden(true, animated: false)
+      handle = Auth.auth().addStateDidChangeListener { _, user in
+        if user == nil {
+          self.navigationController?.popToRootViewController(animated: true)
+        } else {
+          self.performSegue(withIdentifier: self.loginToList, sender: nil)
+          self.enterEmail.text = nil
+          self.enterPassword.text = nil
+        }
+      }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+      super.viewWillDisappear(animated)
+      navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+
+    override func viewDidDisappear(_ animated: Bool) {
+      super.viewDidDisappear(animated)
+      guard let handle = handle else { return }
+      Auth.auth().removeStateDidChangeListener(handle)
+    }
 
     /*
     // MARK: - Navigation
@@ -36,6 +63,24 @@ class LogInViewController: UIViewController {
     }
     */
     @IBAction func loginTapped(_ sender: Any) {
+        guard
+          let email = enterEmail.text,
+          let password = enterPassword.text,
+          !email.isEmpty,
+          !password.isEmpty
+        else { return }
+
+        Auth.auth().signIn(withEmail: email, password: password) { user, error in
+          if let error = error, user == nil {
+            let alert = UIAlertController(
+              title: "Sign In Failed",
+              message: error.localizedDescription,
+              preferredStyle: .alert)
+
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            self.present(alert, animated: true, completion: nil)
+          }
+        }
     }
-    
+
 }

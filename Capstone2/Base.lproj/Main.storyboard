@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vS0-H2-Plf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vpZ-zS-lIs">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -11,7 +11,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="OOq-LL-i4q">
             <objects>
-                <viewController id="bob-5h-osA" customClass="signUpViewController" customModule="SeniorCapstone2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bob-5h-osA" customClass="signUpViewController" customModule="Capstone2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eEk-Gr-inb">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -180,7 +180,7 @@
         <!--View Controller-->
         <scene sceneID="PVb-RY-MYS">
             <objects>
-                <viewController id="6hs-df-tZo" customClass="ViewController" customModule="SeniorCapstone2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6hs-df-tZo" customClass="ViewController" customModule="Capstone2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ehv-Yo-kcj">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -245,7 +245,7 @@
         <!--Log In View Controller-->
         <scene sceneID="upb-DF-9n4">
             <objects>
-                <viewController id="3l4-5f-tR0" customClass="LogInViewController" customModule="SeniorCapstone2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3l4-5f-tR0" customClass="LogInViewController" customModule="Capstone2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CWh-Ud-SFQ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -289,7 +289,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Login"/>
                                 <connections>
-                                    <segue destination="vpZ-zS-lIs" kind="show" id="1m5-ER-e39"/>
+                                    <action selector="loginTapped:" destination="3l4-5f-tR0" eventType="touchUpInside" id="3wx-x0-8Pj"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n09-yY-np7">
@@ -332,10 +332,11 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="enterEmail" destination="k2V-Q0-vDP" id="H5o-UJ-DjN"/>
+                        <outlet property="enterPassword" destination="5Wq-Qt-LMv" id="nms-Bj-0lQ"/>
                         <outlet property="errorLabel" destination="n09-yY-np7" id="Edz-fd-tGh"/>
-                        <outlet property="firstNameTextField" destination="k2V-Q0-vDP" id="end-x0-hFM"/>
-                        <outlet property="lastNameTextField" destination="5Wq-Qt-LMv" id="tdj-WJ-c4Q"/>
                         <outlet property="loginButton" destination="GWT-1y-DRN" id="umN-s3-Jwi"/>
+                        <segue destination="vpZ-zS-lIs" kind="show" identifier="LoginToList" id="32v-4z-cVZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z1P-oP-KDB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -745,7 +746,7 @@
         <!--Settings View Controller-->
         <scene sceneID="WGT-u2-5us">
             <objects>
-                <viewController id="NjK-JA-FxG" customClass="SettingsViewController" customModule="SeniorCapstone2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="NjK-JA-FxG" customClass="SettingsViewController" customModule="Capstone2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DCh-m3-L8l">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1381,8 +1382,8 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="9D6-YT-5uQ"/>
-        <segue reference="1m5-ER-e39"/>
-        <segue reference="xXf-34-Nbe"/>
+        <segue reference="32v-4z-cVZ"/>
+        <segue reference="y0X-hn-3Fk"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="640" height="640"/>
