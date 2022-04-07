@@ -33,7 +33,7 @@ class LogInViewController: UIViewController {
       navigationController?.setNavigationBarHidden(true, animated: false)
       handle = Auth.auth().addStateDidChangeListener { _, user in
         if user == nil {
-          self.navigationController?.popToRootViewController(animated: true)
+          //self.navigationController?.popToRootViewController(animated: true)
         } else {
           self.performSegue(withIdentifier: self.loginToList, sender: nil)
           self.enterEmail.text = nil
