@@ -86,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="17L-UE-u8b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2286.1538461538462" y="-1127.4881516587677"/>
+            <point key="canvasLocation" x="2294" y="-1378"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2do-86-dQL">
@@ -240,7 +240,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UsG-oN-YLS" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1389.2307692307693" y="-677.48815165876772"/>
+            <point key="canvasLocation" x="1189" y="-966"/>
         </scene>
         <!--Log In View Controller-->
         <scene sceneID="upb-DF-9n4">
@@ -341,7 +341,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z1P-oP-KDB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2998.4615384615386" y="-805.4502369668246"/>
+            <point key="canvasLocation" x="2294" y="-727"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1bP-KX-9LX">
@@ -425,7 +425,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7dP-5I-BzI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3658.4615384615381" y="-809.00473933649289"/>
+            <point key="canvasLocation" x="3265" y="-966"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="AFI-1n-3HF">
@@ -729,7 +729,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iwa-HS-ci4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2123.0769230769229" y="-154.26540284360189"/>
+            <point key="canvasLocation" x="2229" y="-50"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="WGT-u2-5us">
@@ -990,7 +990,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MAA-b1-6gb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3803.0769230769229" y="-50.473933649289094"/>
+            <point key="canvasLocation" x="3805" y="-50"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="QtU-ZL-A4U">
@@ -1026,7 +1026,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Nh-UC-OcF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4506.1538461538457" y="-58.293838862559241"/>
+            <point key="canvasLocation" x="4515" y="-50"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="yaA-qE-RxJ">
@@ -1383,13 +1383,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w8u-q0-J9E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="460" y="-677.48815165876772"/>
+            <point key="canvasLocation" x="440" y="-966"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9D6-YT-5uQ"/>
+        <segue reference="Q1k-Nu-Hdh"/>
         <segue reference="32v-4z-cVZ"/>
-        <segue reference="y0X-hn-3Fk"/>
+        <segue reference="xXf-34-Nbe"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="640" height="640"/>

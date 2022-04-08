@@ -83,10 +83,10 @@
 				5DCCD60427FF17F300AF2A56 /* SettingsViewController.swift */,
 				5DCCD60D27FF180E00AF2A56 /* Utilities.swift */,
 				5DCCD5F527FF17C700AF2A56 /* Main.storyboard */,
-				5BE5897427FF25D000A419A9 /* GoogleService-Info.plist */,
 				5DCCD61127FF186100AF2A56 /* Assets.xcassets */,
 				5DCCD5FA27FF17C800AF2A56 /* LaunchScreen.storyboard */,
 				5DCCD5FD27FF17C900AF2A56 /* Info.plist */,
+				5BE5897427FF25D000A419A9 /* GoogleService-Info.plist */,
 			);
 			path = Capstone2;
 			sourceTree = "<group>";
