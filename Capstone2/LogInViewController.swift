@@ -14,7 +14,6 @@ class LogInViewController: UIViewController {
     @IBOutlet weak var enterEmail: UITextField!
     @IBOutlet weak var enterPassword: UITextField!
     @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var errorLabel: UILabel!
     let loginToList = "LoginToList"
     var handle: AuthStateDidChangeListenerHandle?
 
@@ -23,7 +22,6 @@ class LogInViewController: UIViewController {
        
     }
     func setUpElements() {
-            errorLabel.alpha = 0
             Utilities.styleTextField(enterEmail)
             Utilities.styleTextField(enterPassword)
             Utilities.styleFilledButton(loginButton)

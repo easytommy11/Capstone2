@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0Kh-EQ-HDW">
-                                <rect key="frame" x="40" y="127.99999999999997" width="310" height="370.33333333333326"/>
+                                <rect key="frame" x="40" y="128" width="310" height="330"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ft6-N0-IR3">
                                         <rect key="frame" x="0.0" y="0.0" width="310" height="50"/>
@@ -51,12 +51,6 @@
                                             <segue destination="vpZ-zS-lIs" kind="show" id="v1V-d7-mlJ"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9C-xc-rgM">
-                                        <rect key="frame" x="0.0" y="350" width="310" height="20.333333333333314"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" systemColor="systemRedColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="ZLt-Ny-1qR" firstAttribute="height" secondItem="Ft6-N0-IR3" secondAttribute="height" id="EgG-5N-h0L"/>
@@ -77,7 +71,6 @@
                     <navigationItem key="navigationItem" id="6XR-DD-Biw"/>
                     <connections>
                         <outlet property="emailTextField" destination="15U-92-6I3" id="K5j-uu-MmV"/>
-                        <outlet property="errorLabel" destination="D9C-xc-rgM" id="62a-BC-ncC"/>
                         <outlet property="firstNameTextField" destination="Ft6-N0-IR3" id="78T-JL-964"/>
                         <outlet property="lastNameTextField" destination="Ou9-I8-cAM" id="gGZ-QM-8bX"/>
                         <outlet property="passwordTextField" destination="ZLt-Ny-1qR" id="qsO-o7-2nw"/>
@@ -292,23 +285,14 @@
                                     <action selector="loginTapped:" destination="3l4-5f-tR0" eventType="touchUpInside" id="3wx-x0-8Pj"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n09-yY-np7">
-                                <rect key="frame" x="40" y="322" width="310" height="20.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemRedColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5rP-h8-tUL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="GWT-1y-DRN" firstAttribute="trailing" secondItem="Ue6-fI-C01" secondAttribute="trailing" id="6bg-dr-94F"/>
                             <constraint firstItem="GWT-1y-DRN" firstAttribute="top" secondItem="vga-I4-tcN" secondAttribute="bottom" constant="20" id="Dkl-s0-PnV"/>
-                            <constraint firstItem="n09-yY-np7" firstAttribute="top" secondItem="GWT-1y-DRN" secondAttribute="bottom" constant="19" id="E7g-fN-dYG"/>
                             <constraint firstItem="Ue6-fI-C01" firstAttribute="leading" secondItem="5rP-h8-tUL" secondAttribute="leading" constant="40" id="QhD-pp-zsI"/>
-                            <constraint firstItem="GWT-1y-DRN" firstAttribute="leading" secondItem="n09-yY-np7" secondAttribute="leading" id="TJX-q7-dRf"/>
                             <constraint firstItem="vga-I4-tcN" firstAttribute="leading" secondItem="5rP-h8-tUL" secondAttribute="leading" constant="23" id="TV3-Nt-hY2"/>
-                            <constraint firstItem="GWT-1y-DRN" firstAttribute="trailing" secondItem="n09-yY-np7" secondAttribute="trailing" id="TsQ-ve-qyE"/>
                             <constraint firstItem="5rP-h8-tUL" firstAttribute="trailing" secondItem="Ue6-fI-C01" secondAttribute="trailing" constant="40" id="Vhe-RW-F79"/>
                             <constraint firstItem="GWT-1y-DRN" firstAttribute="leading" secondItem="Ue6-fI-C01" secondAttribute="leading" id="nwu-ju-VGT"/>
                             <constraint firstItem="Ue6-fI-C01" firstAttribute="top" secondItem="5rP-h8-tUL" secondAttribute="top" constant="40" id="smu-FE-Xxo"/>
@@ -334,7 +318,6 @@
                     <connections>
                         <outlet property="enterEmail" destination="k2V-Q0-vDP" id="H5o-UJ-DjN"/>
                         <outlet property="enterPassword" destination="5Wq-Qt-LMv" id="nms-Bj-0lQ"/>
-                        <outlet property="errorLabel" destination="n09-yY-np7" id="Edz-fd-tGh"/>
                         <outlet property="loginButton" destination="GWT-1y-DRN" id="umN-s3-Jwi"/>
                         <segue destination="vpZ-zS-lIs" kind="show" identifier="LoginToList" id="32v-4z-cVZ"/>
                     </connections>
@@ -1388,7 +1371,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Q1k-Nu-Hdh"/>
-        <segue reference="32v-4z-cVZ"/>
+        <segue reference="v1V-d7-mlJ"/>
         <segue reference="xXf-34-Nbe"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -1407,9 +1390,6 @@
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

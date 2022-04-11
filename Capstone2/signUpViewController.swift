@@ -15,7 +15,6 @@ class signUpViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
-    @IBOutlet weak var errorLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +23,6 @@ class signUpViewController: UIViewController {
         setUpElements()
     }
     func setUpElements() {
-            errorLabel.alpha = 0
             Utilities.styleTextField(firstNameTextField)
             Utilities.styleTextField(lastNameTextField)
             Utilities.styleTextField(emailTextField)
