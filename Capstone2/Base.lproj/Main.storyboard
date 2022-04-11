@@ -88,10 +88,10 @@
             </objects>
             <point key="canvasLocation" x="2294" y="-1378"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="2do-86-dQL">
             <objects>
-                <viewController id="Hku-Ub-Zfu" sceneMemberID="viewController">
+                <viewController id="Hku-Ub-Zfu" customClass="HomeViewController" customModule="Capstone2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e2t-Uy-J0V">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -171,7 +171,13 @@
                         <viewLayoutGuide key="safeArea" id="h5Q-VP-ZMJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="lGu-vk-S2D"/>
+                    <navigationItem key="navigationItem" id="lGu-vk-S2D">
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="l7a-kg-AQh">
+                            <connections>
+                                <action selector="signOut:" destination="Hku-Ub-Zfu" id="shz-hH-zuF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PzC-hP-gQM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -824,10 +830,10 @@
             </objects>
             <point key="canvasLocation" x="2956.9230769230767" y="-50.473933649289094"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="wFP-zT-b09">
             <objects>
-                <viewController id="okA-Wl-pk0" sceneMemberID="viewController">
+                <viewController id="okA-Wl-pk0" customClass="HomeViewController" customModule="Capstone2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Le7-Ik-dQg">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -986,7 +992,13 @@
                         <viewLayoutGuide key="safeArea" id="Mim-u4-6db"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="IyT-yK-Z1Y"/>
+                    <navigationItem key="navigationItem" id="IyT-yK-Z1Y">
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out " id="o4z-Np-3ml">
+                            <connections>
+                                <action selector="signOut:" destination="okA-Wl-pk0" id="gUM-fM-dZC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MAA-b1-6gb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1028,10 +1040,10 @@
             </objects>
             <point key="canvasLocation" x="4515" y="-50"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="yaA-qE-RxJ">
             <objects>
-                <viewController id="Wgc-u3-md1" sceneMemberID="viewController">
+                <viewController id="Wgc-u3-md1" customClass="HomeViewController" customModule="Capstone2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8rV-v4-ZcF">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1143,16 +1155,22 @@
                         <viewLayoutGuide key="safeArea" id="XjF-G3-1oN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="vMw-4e-a23"/>
+                    <navigationItem key="navigationItem" id="vMw-4e-a23">
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="pVc-nT-gkx">
+                            <connections>
+                                <action selector="signOut:" destination="Wgc-u3-md1" id="Fvd-Yo-q9J"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Eb-Y5-Ib5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2071" y="820"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="YhY-RK-Qt5">
             <objects>
-                <viewController id="CBG-57-N6q" sceneMemberID="viewController">
+                <viewController id="CBG-57-N6q" customClass="HomeViewController" customModule="Capstone2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gIH-15-dz4">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1248,16 +1266,22 @@
                         <viewLayoutGuide key="safeArea" id="wMS-vz-1AA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="1nR-bj-l7T"/>
+                    <navigationItem key="navigationItem" id="1nR-bj-l7T">
+                        <barButtonItem key="rightBarButtonItem" title="Sign out " id="DOT-MJ-PIY">
+                            <connections>
+                                <action selector="signOut:" destination="CBG-57-N6q" id="49a-RM-Hrk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mNJ-JE-V5M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1357" y="820"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="2Bz-G1-sxy">
             <objects>
-                <viewController id="1DL-xl-s0L" sceneMemberID="viewController">
+                <viewController id="1DL-xl-s0L" customClass="HomeViewController" customModule="Capstone2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="62l-8t-Ggm">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1361,7 +1385,13 @@
                         <viewLayoutGuide key="safeArea" id="kds-uR-WSd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="wGb-s5-fp8"/>
+                    <navigationItem key="navigationItem" id="wGb-s5-fp8">
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="MZp-lo-RVp">
+                            <connections>
+                                <action selector="signOut:" destination="1DL-xl-s0L" id="zSb-wc-adZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qy3-h9-PnA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
