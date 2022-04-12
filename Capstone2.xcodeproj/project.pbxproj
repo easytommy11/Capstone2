@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280F39922805B4E600F15ACA /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F39912805B4E600F15ACA /* ForgotPasswordViewController.swift */; };
 		5BE5896F27FF23D600A419A9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5BE5896E27FF23D600A419A9 /* FirebaseAnalytics */; };
 		5BE5897127FF23D600A419A9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5BE5897027FF23D600A419A9 /* FirebaseAuth */; };
 		5BE5897327FF23D600A419A9 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 5BE5897227FF23D600A419A9 /* FirebaseDatabase */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		280F39912805B4E600F15ACA /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		5BE5897427FF25D000A419A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5DCCD5EC27FF17C700AF2A56 /* Capstone2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capstone2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DCCD5EF27FF17C700AF2A56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				5DCCD60527FF17F300AF2A56 /* LogInViewController.swift */,
 				5DCCD60627FF17F300AF2A56 /* HomeViewController.swift */,
 				5DCCD60427FF17F300AF2A56 /* SettingsViewController.swift */,
+				280F39912805B4E600F15ACA /* ForgotPasswordViewController.swift */,
 				5DCCD60D27FF180E00AF2A56 /* Utilities.swift */,
 				5DCCD5F527FF17C700AF2A56 /* Main.storyboard */,
 				5DCCD61127FF186100AF2A56 /* Assets.xcassets */,
@@ -176,6 +179,7 @@
 				5DCCD60F27FF180F00AF2A56 /* ViewController.swift in Sources */,
 				5DCCD60927FF17F300AF2A56 /* LogInViewController.swift in Sources */,
 				5DCCD60827FF17F300AF2A56 /* SettingsViewController.swift in Sources */,
+				280F39922805B4E600F15ACA /* ForgotPasswordViewController.swift in Sources */,
 				5DCCD60A27FF17F300AF2A56 /* HomeViewController.swift in Sources */,
 				5DCCD61027FF180F00AF2A56 /* Utilities.swift in Sources */,
 				5DCCD60727FF17F300AF2A56 /* SceneDelegate.swift in Sources */,

@@ -25,10 +25,10 @@ class LogInViewController: UIViewController {
             Utilities.styleTextField(enterEmail)
             Utilities.styleTextField(enterPassword)
             Utilities.styleFilledButton(loginButton)
-        }
+    }
     override func viewWillAppear(_ animated: Bool) {
       super.viewWillAppear(animated)
-      navigationController?.setNavigationBarHidden(true, animated: false)
+      navigationController?.setNavigationBarHidden(false, animated: false)
       handle = Auth.auth().addStateDidChangeListener { _, user in
         if user == nil {
           //self.navigationController?.popToRootViewController(animated: true)
@@ -78,6 +78,16 @@ class LogInViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "OK", style: .default))
             self.present(alert, animated: true, completion: nil)
           }
+        }
+    }
+    
+    @IBAction func forgotPassword(_ sender: Any) {
+        Auth.auth().sendPasswordReset(withEmail: enterEmail.text!){ (error) in
+            if error == nil {
+                print("SENT...!")
+            }else{
+                print("FAILED - \(String(describing: error?.localizedDescription))")
+            }
         }
     }
 
