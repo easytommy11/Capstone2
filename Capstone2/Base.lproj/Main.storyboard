@@ -1423,10 +1423,10 @@
             </objects>
             <point key="canvasLocation" x="2752" y="820"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="Iin-ge-f3W">
             <objects>
-                <viewController id="XWc-Ay-FJM" sceneMemberID="viewController">
+                <viewController id="XWc-Ay-FJM" customClass="ProfileViewController" customModule="Capstone2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z6g-if-wGv">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1443,27 +1443,66 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="avatar-pfp-1" translatesAutoresizingMaskIntoConstraints="NO" id="I4D-Xk-fbJ">
-                                <rect key="frame" x="44" y="302" width="123" height="110"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rick" translatesAutoresizingMaskIntoConstraints="NO" id="IaH-jV-E8t">
+                                <rect key="frame" x="302" y="77.000000000000455" width="72" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rick" translatesAutoresizingMaskIntoConstraints="NO" id="djz-fd-cqU">
-                                <rect key="frame" x="224" y="302" width="123" height="110"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CwF-Hi-r8B">
+                                <rect key="frame" x="87" y="350" width="81" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pain" translatesAutoresizingMaskIntoConstraints="NO" id="etC-wI-Jyi">
-                                <rect key="frame" x="215" y="459" width="145" height="117"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <backgroundConfiguration key="background" image="avatar-pfp-1"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="a1:" destination="XWc-Ay-FJM" eventType="touchUpInside" id="u6p-Dr-NUP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cqs-KX-B3L">
+                                <rect key="frame" x="277" y="350" width="91" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Wolf" translatesAutoresizingMaskIntoConstraints="NO" id="DQc-zA-fCz">
-                                <rect key="frame" x="44" y="466" width="123" height="110"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <backgroundConfiguration key="background" image="rick"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="a3:" destination="XWc-Ay-FJM" eventType="touchUpInside" id="vAU-1g-EjZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtP-h3-HgM">
+                                <rect key="frame" x="87" y="502" width="81" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <backgroundConfiguration key="background" image="Wolf"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="a2:" destination="XWc-Ay-FJM" eventType="touchUpInside" id="mMq-q5-Gp9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITs-wC-gaO">
+                                <rect key="frame" x="277" y="502" width="76" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <backgroundConfiguration key="background" image="Pain"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="a4:" destination="XWc-Ay-FJM" eventType="touchUpInside" id="7NN-mU-cBk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mDA-nj-ery"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="ssz-aT-Mv6"/>
+                    <connections>
+                        <outlet property="avatar1" destination="CwF-Hi-r8B" id="IR5-Bn-MPu"/>
+                        <outlet property="avatar2" destination="GtP-h3-HgM" id="OWV-wI-b9x"/>
+                        <outlet property="avatar3" destination="Cqs-KX-B3L" id="9aT-cc-qXI"/>
+                        <outlet property="avatar4" destination="ITs-wC-gaO" id="WxJ-U3-DLR"/>
+                        <outlet property="profile" destination="IaH-jV-E8t" id="CZV-2w-hDs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HaW-ds-QbJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
