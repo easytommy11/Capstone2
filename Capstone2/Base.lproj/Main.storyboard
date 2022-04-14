@@ -650,14 +650,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Design your Experience" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfJ-L5-Qhc">
-                                <rect key="frame" x="84" y="82" width="222" height="24"/>
+                                <rect key="frame" x="84" y="78" width="222" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1d-ev-OP6">
-                                <rect key="frame" x="119" y="114" width="154" height="53"/>
+                                <rect key="frame" x="118" y="147" width="154" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -669,7 +669,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NH3-Pt-4YH">
-                                <rect key="frame" x="118" y="189" width="154" height="44"/>
+                                <rect key="frame" x="119" y="216" width="154" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -681,7 +681,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMk-OB-QYJ">
-                                <rect key="frame" x="118" y="321" width="154" height="44"/>
+                                <rect key="frame" x="119" y="347" width="154" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -693,7 +693,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCP-3I-v98">
-                                <rect key="frame" x="118" y="257" width="154" height="44"/>
+                                <rect key="frame" x="119" y="279" width="154" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -705,7 +705,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAp-8l-NUv">
-                                <rect key="frame" x="314" y="82" width="35" height="27"/>
+                                <rect key="frame" x="320" y="108" width="35" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
@@ -716,11 +716,11 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="STEM" translatesAutoresizingMaskIntoConstraints="NO" id="bpC-IE-w4I">
-                                <rect key="frame" x="38" y="392" width="317" height="301"/>
+                                <rect key="frame" x="38" y="417" width="317" height="301"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKc-H3-xA6">
-                                <rect key="frame" x="46" y="704" width="299" height="44"/>
+                                <rect key="frame" x="56" y="726" width="299" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -731,15 +731,21 @@
                                     <segue destination="pf2-6H-yVR" kind="show" id="Nd3-FC-PUp"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GQv-zs-q5F">
-                                <rect key="frame" x="4" y="73" width="72" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgE-fu-zfe">
+                                <rect key="frame" x="16" y="118" width="90" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Edit Profile"/>
+                                <connections>
+                                    <segue destination="XWc-Ay-FJM" kind="show" id="0Nn-bF-ZB9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Dkq-YV-zgq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="HOME" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="mu8-2n-5YD"/>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="778-hc-b2q">
                         <barButtonItem key="leftBarButtonItem" id="4Si-8i-rLe"/>
                         <barButtonItem key="rightBarButtonItem" title="Sign Out" id="NgP-9h-ToZ">
@@ -748,8 +754,8 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="Avatar" destination="GQv-zs-q5F" id="ZLR-lO-5ge"/>
                         <outlet property="backButton" destination="4Si-8i-rLe" id="Opq-7Z-GMa"/>
                     </connections>
                 </viewController>
@@ -833,13 +839,7 @@
                         <viewLayoutGuide key="safeArea" id="05z-Nx-PvX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="urj-AC-3bj">
-                        <barButtonItem key="rightBarButtonItem" title="Edit Profile " id="vd3-nW-nuc">
-                            <connections>
-                                <segue destination="XWc-Ay-FJM" kind="show" id="zuZ-Xe-g6Z"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="urj-AC-3bj"/>
                     <connections>
                         <outlet property="settingScreen" destination="DCh-m3-L8l" id="7hY-Yu-Nc2"/>
                         <outlet property="switch" destination="k4O-iG-qKS" id="seE-cu-IcQ"/>
@@ -1443,53 +1443,59 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rick" translatesAutoresizingMaskIntoConstraints="NO" id="IaH-jV-E8t">
-                                <rect key="frame" x="302" y="77.000000000000455" width="72" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CwF-Hi-r8B">
-                                <rect key="frame" x="87" y="350" width="81" height="79"/>
+                                <rect key="frame" x="44" y="350" width="100" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="">
-                                    <backgroundConfiguration key="background" image="avatar-pfp-1"/>
-                                </buttonConfiguration>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="" backgroundImage="avatar-pfp-1"/>
                                 <connections>
                                     <action selector="a1:" destination="XWc-Ay-FJM" eventType="touchUpInside" id="u6p-Dr-NUP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cqs-KX-B3L">
-                                <rect key="frame" x="277" y="350" width="91" height="88"/>
+                                <rect key="frame" x="243" y="350" width="98" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="">
-                                    <backgroundConfiguration key="background" image="rick"/>
-                                </buttonConfiguration>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="" backgroundImage="rick"/>
                                 <connections>
                                     <action selector="a3:" destination="XWc-Ay-FJM" eventType="touchUpInside" id="vAU-1g-EjZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtP-h3-HgM">
-                                <rect key="frame" x="87" y="502" width="81" height="78"/>
+                                <rect key="frame" x="44" y="502" width="100" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="">
-                                    <backgroundConfiguration key="background" image="Wolf"/>
-                                </buttonConfiguration>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="" backgroundImage="Wolf"/>
                                 <connections>
                                     <action selector="a2:" destination="XWc-Ay-FJM" eventType="touchUpInside" id="mMq-q5-Gp9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITs-wC-gaO">
-                                <rect key="frame" x="277" y="502" width="76" height="105"/>
+                                <rect key="frame" x="243" y="501" width="98" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="">
-                                    <backgroundConfiguration key="background" image="Pain"/>
-                                </buttonConfiguration>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="" backgroundImage="Pain"/>
                                 <connections>
                                     <action selector="a4:" destination="XWc-Ay-FJM" eventType="touchUpInside" id="7NN-mU-cBk"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNX-hh-FOd">
+                                <rect key="frame" x="322" y="78" width="52" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="" backgroundImage="istockphoto-1307387607-1024x1024"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlH-3j-hAp">
+                                <rect key="frame" x="86" y="652" width="87" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Cancel"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCA-2o-7IJ">
+                                <rect key="frame" x="195" y="652" width="92" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Save"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mDA-nj-ery"/>
@@ -1501,7 +1507,7 @@
                         <outlet property="avatar2" destination="GtP-h3-HgM" id="OWV-wI-b9x"/>
                         <outlet property="avatar3" destination="Cqs-KX-B3L" id="9aT-cc-qXI"/>
                         <outlet property="avatar4" destination="ITs-wC-gaO" id="WxJ-U3-DLR"/>
-                        <outlet property="profile" destination="IaH-jV-E8t" id="CZV-2w-hDs"/>
+                        <outlet property="profile" destination="aNX-hh-FOd" id="t5W-g7-jsk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HaW-ds-QbJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1540,9 +1546,9 @@
         <image name="Wolf" width="236" height="236"/>
         <image name="avatar-pfp-1" width="786" height="746"/>
         <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="istockphoto-1307387607-1024x1024" width="1024" height="1024"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="office-hours_featured-blog_725x483" width="725" height="483"/>
-        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="rick" width="225" height="225"/>
         <image name="star.circle" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">

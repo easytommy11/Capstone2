@@ -6,30 +6,39 @@
 //
 
 import UIKit
+import SwiftUI
 
 class ProfileViewController: UIViewController {
 
-    @IBOutlet var profile: UIImageView!
+
+    @IBOutlet var profile: UIButton!
     
     
+  
     @IBOutlet var avatar4: UIButton!
     @IBOutlet var avatar3: UIButton!
     @IBOutlet var avatar2: UIButton!
     @IBOutlet var avatar1: UIButton!
     
-    
-    @IBAction func a1(_ sender: Any) {
-        profile.image = avatar1.backgroundImage(for: .normal)
+    @IBAction func a1(_ sender: UIButton) {
+            profile.setBackgroundImage(UIImage(named: "avatar-pfp-1.jpeg"), for: .normal)
+       
+        
     }
     @IBAction func a2(_ sender: Any) {
+        profile.setBackgroundImage(UIImage(named: "Wolf"), for: .normal)
+        
     }
     @IBAction func a3(_ sender: Any) {
+        profile.setBackgroundImage(UIImage(named: "rick"), for: .normal)
     }
     @IBAction func a4(_ sender: Any) {
+        profile.setBackgroundImage(UIImage(named: "Pain"), for: .normal)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //setBackgroundImage(UIImage(named: "avatar-pfp-1.jpeg"), for: .normal)
         // Do any additional setup after loading the view.
     }
     
