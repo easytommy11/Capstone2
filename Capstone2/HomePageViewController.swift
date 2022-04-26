@@ -8,12 +8,14 @@
 import UIKit
 import Firebase
 
-class HomeViewController: UIViewController {
+class HomePageViewController: UIViewController {
 
+    @IBOutlet var Avatar: UIImageView!
+    @IBOutlet var backButton: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationController?.navigationItem.leftBarButtonItem?.isEnabled = false
+        backButton.isEnabled = false
 
 
         // Do any additional setup after loading the view.
