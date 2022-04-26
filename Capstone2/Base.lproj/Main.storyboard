@@ -628,6 +628,9 @@ Combined. This is a mix of inattentive symptoms and hyperactive/impulsive sympto
                                         </fragment>
                                     </attributedString>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="EBe-W5-DA6" kind="show" id="EIr-yK-4tF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F72-gR-ROQ">
                                 <rect key="frame" x="16" y="227" width="358" height="61"/>
@@ -701,7 +704,7 @@ Combined. This is a mix of inattentive symptoms and hyperactive/impulsive sympto
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cU1-bO-SiN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-386.15384615384613" y="118.72037914691943"/>
+
         </scene>
         <!--View Controller-->
         <scene sceneID="the-hA-G7z">
@@ -809,8 +812,8 @@ Combined. This is a mix of inattentive symptoms and hyperactive/impulsive sympto
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Design your Experience" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfJ-L5-Qhc">
-                                <rect key="frame" x="84" y="78" width="222" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose your Experience" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfJ-L5-Qhc">
+                                <rect key="frame" x="84" y="78" width="228" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -1673,6 +1676,22 @@ Combined. This is a mix of inattentive symptoms and hyperactive/impulsive sympto
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HaW-ds-QbJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3644.6153846153843" y="696.6824644549763"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="71d-fh-dHZ">
+            <objects>
+                <viewController id="EBe-W5-DA6" customClass="ViewController2" customModule="Capstone2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FyO-OQ-hqx">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rUi-vV-TQ1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mMY-vb-l5f"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8it-OC-vNn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1237" y="14"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qvq-mK-1Vl">
