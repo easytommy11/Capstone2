@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2808E8D6281AC43D00F3BD38 /* adhd.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2808E8D5281AC43D00F3BD38 /* adhd.mp4 */; };
 		280F39922805B4E600F15ACA /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F39912805B4E600F15ACA /* ForgotPasswordViewController.swift */; };
 		5BE5896F27FF23D600A419A9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5BE5896E27FF23D600A419A9 /* FirebaseAnalytics */; };
 		5BE5897127FF23D600A419A9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5BE5897027FF23D600A419A9 /* FirebaseAuth */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2808E8D5281AC43D00F3BD38 /* adhd.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = adhd.mp4; sourceTree = "<group>"; };
 		280F39912805B4E600F15ACA /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		5BE5897427FF25D000A419A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5D1A79762805AF7F000D4D09 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 		5DCCD5EE27FF17C700AF2A56 /* Capstone2 */ = {
 			isa = PBXGroup;
 			children = (
+				2808E8D5281AC43D00F3BD38 /* adhd.mp4 */,
 				5DCCD5EF27FF17C700AF2A56 /* AppDelegate.swift */,
 				5DCCD60C27FF180E00AF2A56 /* ViewController.swift */,
 				5DD159382816FC46007D69D5 /* ViewController2.swift */,
@@ -172,6 +175,7 @@
 				5DCCD5FC27FF17C800AF2A56 /* LaunchScreen.storyboard in Resources */,
 				5DCCD61227FF186100AF2A56 /* Assets.xcassets in Resources */,
 				5DCCD5F727FF17C700AF2A56 /* Main.storyboard in Resources */,
+				2808E8D6281AC43D00F3BD38 /* adhd.mp4 in Resources */,
 				5BE5897527FF25D000A419A9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
