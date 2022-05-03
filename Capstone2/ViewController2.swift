@@ -14,12 +14,8 @@ class ViewController2: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         
-        let player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "train", ofType: "m4v")!))
+        let player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "adhd", ofType: "mp4")!))
         
         let vc = AVPlayerViewController()
         vc.player = player

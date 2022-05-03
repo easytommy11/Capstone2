@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bb6-eh-CDv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bb6-eh-CDv">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0Kh-EQ-HDW">
-                                <rect key="frame" x="40" y="127.99999999999997" width="310" height="370.33333333333326"/>
+                                <rect key="frame" x="40" y="128" width="310" height="330"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ft6-N0-IR3">
                                         <rect key="frame" x="0.0" y="0.0" width="310" height="50"/>
@@ -51,12 +51,6 @@
                                             <segue destination="vpZ-zS-lIs" kind="show" id="v1V-d7-mlJ"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9C-xc-rgM">
-                                        <rect key="frame" x="0.0" y="350" width="310" height="20.333333333333314"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" systemColor="systemRedColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="ZLt-Ny-1qR" firstAttribute="height" secondItem="Ft6-N0-IR3" secondAttribute="height" id="EgG-5N-h0L"/>
@@ -77,7 +71,6 @@
                     <navigationItem key="navigationItem" id="6XR-DD-Biw"/>
                     <connections>
                         <outlet property="emailTextField" destination="15U-92-6I3" id="K5j-uu-MmV"/>
-                        <outlet property="errorLabel" destination="D9C-xc-rgM" id="62a-BC-ncC"/>
                         <outlet property="firstNameTextField" destination="Ft6-N0-IR3" id="78T-JL-964"/>
                         <outlet property="lastNameTextField" destination="Ou9-I8-cAM" id="gGZ-QM-8bX"/>
                         <outlet property="passwordTextField" destination="ZLt-Ny-1qR" id="qsO-o7-2nw"/>
@@ -86,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="17L-UE-u8b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3223.0769230769229" y="-1378.4360189573458"/>
+            <point key="canvasLocation" x="1257" y="-545"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="2do-86-dQL">
@@ -181,7 +174,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PzC-hP-gQM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="629" y="820"/>
+            <point key="canvasLocation" x="2037" y="-539"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="PVb-RY-MYS">
@@ -246,7 +239,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UsG-oN-YLS" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2116.9230769230767" y="-966.11374407582935"/>
+            <point key="canvasLocation" x="1257" y="-1253"/>
         </scene>
         <!--Log In View Controller-->
         <scene sceneID="upb-DF-9n4">
@@ -298,23 +291,14 @@
                                     <action selector="loginTapped:" destination="3l4-5f-tR0" eventType="touchUpInside" id="3wx-x0-8Pj"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n09-yY-np7">
-                                <rect key="frame" x="40" y="322" width="310" height="20.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemRedColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5rP-h8-tUL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="GWT-1y-DRN" firstAttribute="trailing" secondItem="Ue6-fI-C01" secondAttribute="trailing" id="6bg-dr-94F"/>
                             <constraint firstItem="GWT-1y-DRN" firstAttribute="top" secondItem="vga-I4-tcN" secondAttribute="bottom" constant="20" id="Dkl-s0-PnV"/>
-                            <constraint firstItem="n09-yY-np7" firstAttribute="top" secondItem="GWT-1y-DRN" secondAttribute="bottom" constant="19" id="E7g-fN-dYG"/>
                             <constraint firstItem="Ue6-fI-C01" firstAttribute="leading" secondItem="5rP-h8-tUL" secondAttribute="leading" constant="40" id="QhD-pp-zsI"/>
-                            <constraint firstItem="GWT-1y-DRN" firstAttribute="leading" secondItem="n09-yY-np7" secondAttribute="leading" id="TJX-q7-dRf"/>
                             <constraint firstItem="vga-I4-tcN" firstAttribute="leading" secondItem="5rP-h8-tUL" secondAttribute="leading" constant="23" id="TV3-Nt-hY2"/>
-                            <constraint firstItem="GWT-1y-DRN" firstAttribute="trailing" secondItem="n09-yY-np7" secondAttribute="trailing" id="TsQ-ve-qyE"/>
                             <constraint firstItem="5rP-h8-tUL" firstAttribute="trailing" secondItem="Ue6-fI-C01" secondAttribute="trailing" constant="40" id="Vhe-RW-F79"/>
                             <constraint firstItem="GWT-1y-DRN" firstAttribute="leading" secondItem="Ue6-fI-C01" secondAttribute="leading" id="nwu-ju-VGT"/>
                             <constraint firstItem="Ue6-fI-C01" firstAttribute="top" secondItem="5rP-h8-tUL" secondAttribute="top" constant="40" id="smu-FE-Xxo"/>
@@ -332,14 +316,13 @@
                     <connections>
                         <outlet property="enterEmail" destination="k2V-Q0-vDP" id="H5o-UJ-DjN"/>
                         <outlet property="enterPassword" destination="5Wq-Qt-LMv" id="nms-Bj-0lQ"/>
-                        <outlet property="errorLabel" destination="n09-yY-np7" id="Edz-fd-tGh"/>
                         <outlet property="loginButton" destination="GWT-1y-DRN" id="umN-s3-Jwi"/>
                         <segue destination="vpZ-zS-lIs" kind="show" identifier="LoginToList" id="32v-4z-cVZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z1P-oP-KDB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3223.0769230769229" y="-727.25118483412314"/>
+            <point key="canvasLocation" x="1257" y="148"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1bP-KX-9LX">
@@ -423,7 +406,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7dP-5I-BzI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4193.8461538461534" y="-966.11374407582935"/>
+            <point key="canvasLocation" x="1257" y="852"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="pDP-6W-ylu">
@@ -474,7 +457,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T1A-xp-4wd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1075.3846153846152" y="-50.473933649289094"/>
+            <point key="canvasLocation" x="3571" y="-1253"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Egt-9i-tKn">
@@ -596,7 +579,7 @@ Combined. This is a mix of inattentive symptoms and hyperactive/impulsive sympto
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iQj-dw-dUV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-474" y="-896"/>
+            <point key="canvasLocation" x="3569" y="-414"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="AFI-1n-3HF">
@@ -704,7 +687,7 @@ Combined. This is a mix of inattentive symptoms and hyperactive/impulsive sympto
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cU1-bO-SiN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-
+            <point key="canvasLocation" x="2805" y="-1253"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="the-hA-G7z">
@@ -802,7 +785,7 @@ Combined. This is a mix of inattentive symptoms and hyperactive/impulsive sympto
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ScD-Qw-KP9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="340" y="41.943127962085306"/>
+            <point key="canvasLocation" x="2037" y="2246"/>
         </scene>
         <!--HOME-->
         <scene sceneID="NZh-9n-5jU">
@@ -924,7 +907,7 @@ Combined. This is a mix of inattentive symptoms and hyperactive/impulsive sympto
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iwa-HS-ci4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2227.6923076923076" y="-50.473933649289094"/>
+            <point key="canvasLocation" x="2037" y="-1929"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="WGT-u2-5us">
@@ -1017,7 +1000,7 @@ Combined. This is a mix of inattentive symptoms and hyperactive/impulsive sympto
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7qX-Yt-3Hf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2956.9230769230767" y="-50.473933649289094"/>
+            <point key="canvasLocation" x="1257" y="1552"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="wFP-zT-b09">
@@ -1191,7 +1174,7 @@ Combined. This is a mix of inattentive symptoms and hyperactive/impulsive sympto
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MAA-b1-6gb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3805" y="-50"/>
+            <point key="canvasLocation" x="2805" y="-1929"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="QtU-ZL-A4U">
@@ -1227,7 +1210,7 @@ Combined. This is a mix of inattentive symptoms and hyperactive/impulsive sympto
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Nh-UC-OcF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4515" y="-50"/>
+            <point key="canvasLocation" x="3571" y="-1929"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="yaA-qE-RxJ">
@@ -1354,7 +1337,7 @@ Combined. This is a mix of inattentive symptoms and hyperactive/impulsive sympto
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Eb-Y5-Ib5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2071" y="820"/>
+            <point key="canvasLocation" x="2037" y="160"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="YhY-RK-Qt5">
@@ -1465,7 +1448,7 @@ Combined. This is a mix of inattentive symptoms and hyperactive/impulsive sympto
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mNJ-JE-V5M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1357" y="820"/>
+            <point key="canvasLocation" x="2037" y="1552"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="2Bz-G1-sxy">
@@ -1584,7 +1567,7 @@ Combined. This is a mix of inattentive symptoms and hyperactive/impulsive sympto
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qy3-h9-PnA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2752" y="820"/>
+            <point key="canvasLocation" x="2037" y="835"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="Iin-ge-f3W">
@@ -1675,7 +1658,7 @@ Combined. This is a mix of inattentive symptoms and hyperactive/impulsive sympto
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HaW-ds-QbJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3644.6153846153843" y="696.6824644549763"/>
+            <point key="canvasLocation" x="2037" y="-1253"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="71d-fh-dHZ">
@@ -1691,7 +1674,7 @@ Combined. This is a mix of inattentive symptoms and hyperactive/impulsive sympto
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8it-OC-vNn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1237" y="14"/>
+            <point key="canvasLocation" x="4374" y="-1929"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qvq-mK-1Vl">
@@ -1709,11 +1692,11 @@ Combined. This is a mix of inattentive symptoms and hyperactive/impulsive sympto
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ogo-wu-P7f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1187.6923076923076" y="-966.11374407582935"/>
+            <point key="canvasLocation" x="1257" y="-1929"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Q1k-Nu-Hdh"/>
+        <segue reference="Dd9-Ig-M9E"/>
         <segue reference="32v-4z-cVZ"/>
         <segue reference="xXf-34-Nbe"/>
     </inferredMetricsTieBreakers>
@@ -1741,9 +1724,6 @@ Combined. This is a mix of inattentive symptoms and hyperactive/impulsive sympto
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

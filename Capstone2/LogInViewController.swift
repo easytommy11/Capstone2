@@ -14,7 +14,6 @@ class LogInViewController: UIViewController {
     @IBOutlet weak var enterEmail: UITextField!
     @IBOutlet weak var enterPassword: UITextField!
     @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var errorLabel: UILabel!
     let loginToList = "LoginToList"
     var handle: AuthStateDidChangeListenerHandle?
 
@@ -23,11 +22,10 @@ class LogInViewController: UIViewController {
        
     }
     func setUpElements() {
-            errorLabel.alpha = 0
             Utilities.styleTextField(enterEmail)
             Utilities.styleTextField(enterPassword)
             Utilities.styleFilledButton(loginButton)
-        }
+    }
     override func viewWillAppear(_ animated: Bool) {
       super.viewWillAppear(animated)
       //navigationController?.setNavigationBarHidden(true, animated: false)
@@ -80,6 +78,16 @@ class LogInViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "OK", style: .default))
             self.present(alert, animated: true, completion: nil)
           }
+        }
+    }
+    
+    @IBAction func forgotPassword(_ sender: Any) {
+        Auth.auth().sendPasswordReset(withEmail: enterEmail.text!){ (error) in
+            if error == nil {
+                print("SENT...!")
+            }else{
+                print("FAILED - \(String(describing: error?.localizedDescription))")
+            }
         }
     }
 
